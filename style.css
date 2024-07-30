@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* over all fonts style, colors and remove effects */
+
+h1, h2, h3 {
+    font-size: 30px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    color: #363732;
+}
+
+p, li, a {
+    font-size: 18px;
+    font-family: "Kanit", sans-serif;
+    font-weight: 200;
+    color: #363732;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* Part of navigation bar */
+
+/* Logo home button */
+.nav {
+    display: flex;
+    margin: 20px 50px;
+    justify-content: space-between;
+}
+
+.nav .homeText .textLogo {
+    display: flex;
+    gap: 10px;
+}
+
+.nav .homeText .frontLogo {
+ color: #3454D0;
+}
+
+/* nav items layout */
+.nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+/* hover effect to nav items */
+
+
+/* Part of main content */
+.main {
+    display: flex;
+    margin: 50px 100px;
+    justify-content: space-between;
+}
+
+.main .man img {
+    width: 500px;
+    height: auto;
+    position: fixed;
+    left: 600px;
+
+}
+
+.main .tools img {
+    width: 150px;
+    height: auto;
+}
+
+/* text part */
+.main .introText {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.main .introText .profession h1 {
+    font-size: 70px;
+    line-height: 70px;
+}
+
+.main .introText .profession .mainText {
+    color: #3454D0;
+}
+
+.main .introText .profession .secondText {
+    width: 100px;
+    color: transparent; /* remove fill from text */
+    -webkit-text-stroke: 1px #363732; /* stoke effect */
+}
+
+/* knowMore button effect */
+.main .introText .knowMore a {
+    border: 1px solid #363732;
+    padding: 20px 50px;
+    font-size: 40px;
+    font-weight: 500;
+
+}
+
+.main .introText .knowMore a:hover {
+    border: none;
+    background-color: #3454D0;
+    color: #f8f8ff;
+    box-shadow: 5px 5px #F5F749;
+
+    transition: 0.2s ease-in;
+}
