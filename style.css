@@ -30,6 +30,14 @@ a {
     text-decoration: none;
 }
 
+/* add noise background image */
+body {
+    background-image: url('./images/home-background.png');
+  background-size: cover; /* Ensures the image covers the whole background */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  background-position: center; /* Centers the image */
+}
+
 
 /* Part of navigation bar */
 
@@ -56,8 +64,29 @@ a {
     gap: 30px;
 }
 
-/* hover effect to nav items */
+/* line hover effect on nav items */
+.nav ul a {
+    position: relative;
+}
 
+.nav ul a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #3454D0;
+
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 150ms ease-in;
+}
+
+.nav ul a:hover::after {
+    transform: scaleX(1);
+    transform-origin: center;
+}
 
 /* Part of main content */
 .main {
@@ -74,8 +103,9 @@ a {
 }
 
 .main .tools img {
-    width: 150px;
+    width: 130px;
     height: auto;
+    margin-top: 250px;
 }
 
 /* text part */
@@ -86,6 +116,7 @@ a {
     gap: 30px;
 }
 
+/* adjust line height for main text */
 .main .introText .profession h1 {
     font-size: 70px;
     line-height: 70px;
@@ -95,6 +126,7 @@ a {
     color: #3454D0;
 }
 
+/* making outline text */
 .main .introText .profession .secondText {
     width: 100px;
     color: transparent; /* remove fill from text */
@@ -142,3 +174,4 @@ a {
     left: 420px;
     top: 270px;
 }
+
