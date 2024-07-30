@@ -40,6 +40,7 @@ a {
     justify-content: space-between;
 }
 
+/* logo part */
 .nav .homeText .textLogo {
     display: flex;
     gap: 10px;
@@ -69,8 +70,7 @@ a {
     width: 500px;
     height: auto;
     position: fixed;
-    left: 600px;
-
+    left: 550px;
 }
 
 .main .tools img {
@@ -107,14 +107,38 @@ a {
     padding: 20px 50px;
     font-size: 40px;
     font-weight: 500;
-
 }
 
+/* hover effect to knowMore button */
 .main .introText .knowMore a:hover {
     border: none;
     background-color: #3454D0;
     color: #f8f8ff;
-    box-shadow: 5px 5px #F5F749;
+    box-shadow: 10px 10px #F5F749;
 
     transition: 0.2s ease-in;
+}
+
+/* adding elements in background */
+.elements img {
+    position: fixed;
+}
+
+.elements .element-01 {
+    width: 400px;
+    left: 700px;
+    top: 200px;
+}
+
+.elements .element-04 {
+    width: 300px;
+    right: -100px;
+    top: 150px;
+    transform: rotate(-90deg);
+}
+
+.elements .element-06 {
+    width: 150px;
+    left: 420px;
+    top: 270px;
 }
