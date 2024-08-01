@@ -89,6 +89,7 @@ body {
     transform-origin: center;
 }
 
+/* Home page */
 /* Part of main content */
 .main {
     display: flex;
@@ -147,7 +148,7 @@ body {
     border: none;
     background-color: #3454D0;
     color: #f8f8ff;
-    box-shadow: 10px 10px #F5F749;
+    /* box-shadow: 10px 10px #3454D0; */
 
     transition: 0.2s ease-in;
 }
@@ -196,3 +197,5 @@ body {
     top: 270px;
 }
 
+
+/*  */
