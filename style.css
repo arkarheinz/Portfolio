@@ -89,7 +89,6 @@ body {
     transform-origin: center;
 }
 
-/* Home page */
 /* Part of main content */
 .main {
     display: flex;
@@ -196,6 +195,3 @@ body {
     left: 420px;
     top: 270px;
 }
-
-
-/*  */
